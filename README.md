@@ -21,7 +21,7 @@ These results illustrate the connection between molecular bond stretching, elect
 | Notebook | Content |
 |---|---|
 | `day01-03_quantum_foundations.ipynb` | Complex numbers, qubits, bra-ket notation, tensor products, Bell states, SVD, Schmidt decomposition, density matrices, and entanglement entropy |
-| `day04_quantum_chemistry_foundatios.ipynb` | Schrödinger equation, molecular Hamiltonian, Born-Oppenheimer approximation, Hartree-Fock theory, electronic correlation, and basis sets |
+| `day04_quantum_chemistry_foundations.ipynb` | Schrödinger equation, molecular Hamiltonian, Born-Oppenheimer approximation, Hartree-Fock theory, electronic correlation, and basis sets |
 | `day05_mps_heisenberg.ipynb` | Sequential SVD for MPS construction, truncation, and the Heisenberg Hamiltonian |
 | `day06_dmrg_optimization.ipynb` | Educational implementation of two local MPS optimization steps, effective Hamiltonians, SVD-based tensor updates, and validation against exact diagonalization |
 | `day07_h2_hartreefock.ipynb` | Hartree-Fock calculations for H₂ using PySCF and the potential energy curve |
@@ -89,9 +89,7 @@ For the tested calculation, the final state has unit norm, a zero residual, and 
 
 ## Reproducibility
 
-The calculations are provided in Jupyter notebooks intended to run in Google Colab. The workflow uses Python, NumPy, PySCF, and Block2.
-
-Dependency installation and execution instructions should be included in the notebooks or repository setup documentation. Exact dependency versions should be recorded once the final computational environment is confirmed.
+The notebooks are written to run in Google Colab. Versions used: NumPy 2.1.3, PySCF 2.14.0, Block2 0.5.4. Install with `pip install pyscf block2`, then run each notebook top to bottom (Runtime → Restart and run all).
 
 ## Future Directions
 
