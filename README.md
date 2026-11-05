@@ -83,7 +83,6 @@ For the tested calculation, the final state has unit norm, a zero residual, and 
 - H₂ is a minimal test system rather than a large-scale molecular benchmark.
 - STO-3G is a minimal basis set and limits quantitative accuracy.
 - FCI is inexpensive for the two-orbital H₂ problem, so the energy agreement does not demonstrate a computational advantage for DMRG over FCI.
-- The Day 6 notebook demonstrates two local optimization steps rather than a complete converged DMRG sweep algorithm.
 - The results validate numerical consistency for the tested geometries and setup but do not establish performance for larger active spaces or more complex molecules.
 - Single-orbital entropy captures one aspect of orbital correlation and does not describe every form of molecular entanglement.
 
