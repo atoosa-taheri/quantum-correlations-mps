@@ -76,7 +76,7 @@ The increasing entropy indicates stronger orbital correlations as the molecule a
 
 The Day 6 notebook demonstrates local MPS optimization on a three-site Heisenberg chain. It performs two local optimization steps, updates tensors using SVD, reconstructs the state, and checks its energy and eigenstate residual against exact diagonalization.
 
-For the tested calculation, the final state has unit norm, a zero residual, and an energy matching the exact ground-state energy. This validates the final state for that particular calculation, but does not establish convergence or correctness for arbitrary Hamiltonians.
+For the tested calculation, the final state has unit norm, a residual norm of about 10⁻¹⁵ (numerical precision), and an energy matching the exact ground-state energy. This validates the final state for that particular calculation, but does not establish convergence or correctness for arbitrary Hamiltonians.
 
 ## Limitations
 
