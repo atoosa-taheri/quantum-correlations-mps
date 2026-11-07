@@ -106,6 +106,6 @@ This independent project builds on a B.Sc. in Applied Chemistry and develops com
 
 **Atoosa Taheri**
 **Atoosa.Taheri79@gmail.com**
- [Project report (PDF)](Atoosa_Taheri_Project_Report.pdf)
+ [Project report (PDF)](Atoosa-Taheri-Project-Report.pdf)
 
 Computational quantum chemistry | Electronic correlation | Tensor networks | Quantum information
