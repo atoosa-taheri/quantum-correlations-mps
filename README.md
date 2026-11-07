@@ -21,17 +21,17 @@ These results illustrate the connection between molecular bond stretching, elect
 | Notebook | Content |
 |---|---|
 | `day01-03_quantum_foundations.ipynb` | Complex numbers, qubits, bra-ket notation, tensor products, Bell states, SVD, Schmidt decomposition, density matrices, and entanglement entropy |
-| `day04_quantum_chemistry_foundations.ipynb` | Schrödinger equation, molecular Hamiltonian, Born-Oppenheimer approximation, Hartree-Fock theory, electronic correlation, and basis sets |
+| `day04_quantum_chemistry_foundations.ipynb` | Introduction to molecular quantum chemistry with PySCF: Born-Oppenheimer approximation, Hartree-Fock theory, basis sets, and RHF energies of H₂ at two bond lengths |
 | `day05_mps_heisenberg.ipynb` | Sequential SVD for MPS construction, truncation, and the Heisenberg Hamiltonian |
 | `day06_dmrg_optimization.ipynb` | Educational implementation of two local MPS optimization steps, effective Hamiltonians, SVD-based tensor updates, and validation against exact diagonalization |
 | `day07_h2_hartreefock.ipynb` | Hartree-Fock calculations for H₂ using PySCF and the potential energy curve |
-| `day08_ccsd_correlation_block2.ipynb` | CCSD correlation energy as a function of bond length and initial use of Block2 |
+| `day08_ccsd_correlation_block2.ipynb` | CCSD correlation energy as a function of bond length and Block2 installation check|
 | `day09-10_fci_dmrg_entanglement.ipynb` | FCI calculations, DMRG calculations using Block2, and single-orbital entropy versus bond length |
 
 ## Methods
 
 - **Electronic structure:** Hartree-Fock, CCSD, and Full Configuration Interaction (FCI) using PySCF.
-- **Tensor networks:** MPS construction and local optimization using NumPy, followed by DMRG calculations using Block2.
+- **Tensor networks:** MPS construction and a pedagogical two-site DMRG-style optimization in NumPy (three-site Heisenberg chain); molecular DMRG with Block2 (4 sweeps, bond dimension 10).
 - **Molecular system:** H₂ in the STO-3G basis.
 - **Geometries:** H-H distances of 1.4, 2.2, 3.0, and 4.0 Bohr.
 - **Analysis:** Ground-state energy comparisons, correlation energy, reduced density matrices, and single-orbital entropy.
@@ -68,7 +68,7 @@ Single-orbital entropy increases as the H-H bond is stretched.
 | 3.0 | 0.616999 |
 | 4.0 | 0.906501 |
 
-The two spatial orbitals have equal entropy at each distance, consistent with the symmetry of this two-orbital description of the molecular ground state.
+The two spatial orbitals have equal entropy at each distance. This follows because the ground state is a pure state of the two-orbital system, and for a pure bipartite state both parts have the same entropy.
 
 The increasing entropy indicates stronger orbital correlations as the molecule approaches the dissociation regime. This quantity describes correlations between one spatial orbital and the rest of the system; it should not be interpreted as the total entanglement entropy between the two atoms.
 
